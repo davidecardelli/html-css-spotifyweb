@@ -1,0 +1,32 @@
+/* Reset */
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+	font-family: sans-serif;
+}
+
+.top {
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+footer  {
+    height: 120px;
+    background-color: #282828;
+}
+
+/* Utils */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
