@@ -14,6 +14,10 @@ body {
 	font-family: sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .top {
     height: calc(100vh - 120px);
 }
@@ -22,22 +26,27 @@ body {
     flex-basis: 250px;
     flex-shrink: 0;
     background-color: #000;
-    color: #fff
+    color: #fff;
+    padding-left: 10px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top-right {
     flex-grow: 1;
     position: relative;
-    background-color: fuchsia;
+    background-color: #141922;
     overflow-y: auto;
 }
 
 .top-right .header{
     position: fixed;
     left: 250px;
-    /* right: 0; */
+    right: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     height: 80px;
 }
 
@@ -55,4 +64,57 @@ footer  {
 
 .flex {
     display: flex;
+}
+
+/* Top Flex */
+
+.logo-sm {
+    display: none;
+}
+
+.user img{
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+
+/*****************
+RESPONSIVE
+******************/
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    .top-left {
+        flex-basis: 40px;
+    }
+
+    .top-right .header{
+        left: 40px;
+    }
+
+    .top-left .playlist,
+    .top-left span,
+    .top-left .logo {
+        display: none;
+    }
+
+    .top-left .logo-sm {
+        display: block;
+    }
+
+    .top-left i {
+        text-align: center;
+        margin-bottom: 5px;
+    }
 }
