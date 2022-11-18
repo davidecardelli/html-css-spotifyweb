@@ -16,7 +16,29 @@ body {
 
 .top {
     height: calc(100vh - 120px);
-    overflow: auto;
+}
+
+.top-left {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    background-color: #000;
+    color: #fff
+}
+
+.top-right {
+    flex-grow: 1;
+    position: relative;
+    background-color: fuchsia;
+    overflow-y: auto;
+}
+
+.top-right .header{
+    position: fixed;
+    left: 250px;
+    /* right: 0; */
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    height: 80px;
 }
 
 footer  {
@@ -29,4 +51,8 @@ footer  {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.flex {
+    display: flex;
 }
