@@ -25,8 +25,24 @@ a {
     text-decoration: none;
 }
 
+li {
+    margin-top: 10px;
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+li a{
+    color: #7d7f84;
+    font-size: .8rem;
+}
+
 h3 {
     font-size: 1.5rem;
+}
+
+h5 {
+    color: white;
+    margin-top: 20px;
 }
 
 /* Web APP, mantiene il footer (barra dei comandi) fissato. */
@@ -77,6 +93,19 @@ UTILS
     margin-bottom: 10px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+
 .ml-10 {
     margin-left: 10px;
 }
@@ -87,6 +116,11 @@ UTILS
 
 .gap-30 {
     gap: 30;
+}
+
+.selected {
+    color: white;
+    border-left: 3px solid greenyellow;
 }
 
 
@@ -110,16 +144,21 @@ BTN
     margin-right: 10px;
 }
 
+.header .btn:hover {
+    scale: 130%;
+}
+
 /*****************
 TOP LEFT
 ******************/
-
 .top-left {
     flex-basis: 250px;
     flex-shrink: 0;
     background-color: #000;
-    color: #fff;
-    padding-left: 10px; 
+    color: #7d7f84;
+    font-size: .8rem;
+    font-weight: bold;
+    padding-left: 15px; 
 
     display: flex;
     flex-direction: column;
@@ -130,11 +169,30 @@ TOP LEFT
     display: none;
 }
 
-.user img{
-    height: 20px;
+.logo img {
+    height: 35px;
+}
+
+.top-left-top div img,
+.top-left-bottom div img {
+    width: 20px;
+}
+
+.fa-plus {
+    background-color: #7d7f84;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.playlist span {
+    font-size: 0.9rem;
+}
+
+.user img {
+    width: 20px;
     background-color: grey;
     border-radius: 50%;
-    margin-right: 5px;
 }
 
 /*****************
@@ -380,6 +438,12 @@ RESPONSIVE
 
     .top-left {
         flex-basis: 40px;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .selected {
+        display: none;
     }
 
     .top-right .header{
