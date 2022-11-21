@@ -68,7 +68,9 @@ UTILS
     border-radius: 50%;
 }
 
-
+.mb-10 {
+    margin-bottom: 10px;
+}
 
 /*****************
 BTN
@@ -150,6 +152,7 @@ TOP RIGHT
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 
 .col {
