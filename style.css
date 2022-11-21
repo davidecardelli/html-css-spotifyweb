@@ -209,6 +209,11 @@ FOOTER
 
 .player img {
     height: 60px;
+    width: 60px;
+}
+
+.footer-left{
+    flex-shrink: 0;
 }
 
 .footer-left .fa-solid {
@@ -226,6 +231,10 @@ FOOTER
 .txt-grey {
     color: #7d7f84;
     font-size: 0.7rem;
+}
+
+.footer-center {
+    flex-shrink: 1;
 }
 
 .footer-center .fa-solid {
@@ -259,7 +268,7 @@ FOOTER
     color: white;
     font-size: .7rem;
     font-weight: bold;
-    margin: 20px;
+    margin: 5px;
 }
 
 .footer-right .fa-solid {
@@ -280,7 +289,6 @@ RESPONSIVE
     .subtitle-card {
         font-size: .6rem;
     }
-
 }
 
 @media screen and (max-width: 1099px) {
@@ -291,6 +299,14 @@ RESPONSIVE
     
     .subtitle-card {
         font-size: .5rem;
+    }
+
+    .footer-center .bar {
+        width: 250px;
+    }
+    
+    .footer-right .bar {
+        width: 100px;
     }
 
 }
@@ -311,17 +327,56 @@ RESPONSIVE
 
 }
 
+@media screen and (max-width: 808px) {
+
+    .footer-center .bar {
+        width: 200px;
+    }
+    
+    .footer-right .bar {
+        width: 80px;
+    }
+
+    .footer-center .fa-solid {
+        font-size: 1rem;
+    }
+    
+    .footer-center .fa-play {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 808px) {
+
+    .footer-center .bar {
+        width: 125px;
+    }
+    
+    .footer-right .bar {
+        width: 50px;
+    }
+
+    .footer-center .fa-solid {
+        font-size: 0.8rem;
+    }
+    
+    .footer-center .fa-play {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .col {
         flex-basis: 50%;
     }
 
-
+    .ml-30 {
+        margin-left: 10px;
+    }
 }
 
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 613px) {
 
     .top-left {
         flex-basis: 40px;
@@ -346,10 +401,17 @@ RESPONSIVE
         margin-bottom: 5px;
     }
 
-    .col {
-        flex-basis: 50%;
+    .footer-center .bar {
+        width: 87.5px;
     }
+    
+    .footer-right .bar {
+        width: 35px;
+    }
+}
 
+
+@media screen and (max-width: 576px) {
     .title-card {
         font-size: 1rem;
     }
@@ -357,5 +419,4 @@ RESPONSIVE
     .subtitle-card {
         font-size: .6rem;
     }
-    
 }
