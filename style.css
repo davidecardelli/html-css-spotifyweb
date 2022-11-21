@@ -1,5 +1,6 @@
-/* Reset */
-
+/*****************
+CSS RESET
+******************/
 *{
 	margin: 0;
 	padding: 0;
@@ -8,7 +9,9 @@
 	box-sizing: border-box;
 }
 
-/* Generics */
+/*****************
+GENERICS
+******************/
 
 body {
 	font-family: sans-serif;
@@ -18,9 +21,65 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+/* Web APP, mantiene il footer (barra dei comandi) fissato. */
+
 .top {
     height: calc(100vh - 120px);
 }
+
+footer  {
+    height: 120px;
+    background-color: #282828;
+}
+
+/*****************
+UTILS
+******************/
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*****************
+BTN
+******************/
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+
+    color: white;
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+
+    margin-right: 10px;
+}
+
+/*****************
+TOP LEFT
+******************/
 
 .top-left {
     flex-basis: 250px;
@@ -34,40 +93,6 @@ img {
     justify-content: space-between;
 }
 
-.top-right {
-    flex-grow: 1;
-    position: relative;
-    background-color: #141922;
-    overflow-y: auto;
-}
-
-.top-right .header{
-    position: fixed;
-    left: 250px;
-    right: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    height: 80px;
-}
-
-footer  {
-    height: 120px;
-    background-color: #282828;
-}
-
-/* Utils */
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-/* Top Flex */
-
 .logo-sm {
     display: none;
 }
@@ -79,6 +104,67 @@ footer  {
     margin-right: 5px;
 }
 
+/*****************
+TOP RIGHT
+******************/
+
+.top-right {
+    flex-grow: 1;
+    position: relative;
+    background-color: #141922;
+    overflow-y: auto;
+    color: white;
+}
+
+.top-right .header{
+    height: 80px;
+
+    position: fixed;
+    left: 250px;
+    right: 0;
+
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: calc(100% / 6);
+}
+
+.card {
+    min-height: 150px;
+    padding: 20px;
+}
+
+.card p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.title-card p {
+    font-weight: bold;
+}
+
+.subtitle-card p {
+    font-size: .6rem;
+    color: #7d7f84;
+}
+
+/*****************
+FOOTER
+******************/
 
 
 /*****************
