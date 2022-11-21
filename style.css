@@ -163,6 +163,7 @@ TOP RIGHT
 .card p {
     text-align: center;
     margin-top: 10px;
+    word-break: break-word;
 }
 
 .title-card {
@@ -183,10 +184,42 @@ FOOTER
 RESPONSIVE
 ******************/
 
+@media screen and (max-width: 1199px) {
+
+    .title-card {
+        font-size: .8rem;
+    }
+    
+    .subtitle-card {
+        font-size: .6rem;
+    }
+
+}
+
+@media screen and (max-width: 1099px) {
+
+    .title-card {
+        font-size: .7rem;
+    }
+    
+    .subtitle-card {
+        font-size: .5rem;
+    }
+
+}
+
 @media screen and (max-width: 992px) {
 
     .col {
-        flex-basis: calc(100% / 6);
+        flex-basis: 25%;
+    }
+
+    .title-card {
+        font-size: .7rem;
+    }
+    
+    .subtitle-card {
+        font-size: .5rem;
     }
 
 }
@@ -194,18 +227,12 @@ RESPONSIVE
 @media screen and (max-width: 768px) {
 
     .col {
-        flex-basis: calc(100% / 4);
-    }
-    
-}
-
-@media screen and (max-width: 576px) {
-
-    .col {
-        flex-basis: calc(100% / 3);
+        flex-basis: 50%;
     }
 
+
 }
+
 
 @media screen and (max-width: 576px) {
 
@@ -235,4 +262,13 @@ RESPONSIVE
     .col {
         flex-basis: 50%;
     }
+
+    .title-card {
+        font-size: 1rem;
+    }
+    
+    .subtitle-card {
+        font-size: .6rem;
+    }
+    
 }
