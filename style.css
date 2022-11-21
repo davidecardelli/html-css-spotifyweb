@@ -60,6 +60,10 @@ UTILS
     padding-left: 20px;
 }
 
+.pr-20 {
+    padding-right: 20px;
+}
+
 .br-50 {
     border-radius: 50%;
 }
@@ -153,7 +157,6 @@ TOP RIGHT
 }
 
 .card {
-    min-height: 150px;
     padding: 20px;
 }
 
@@ -182,10 +185,26 @@ RESPONSIVE
 
 @media screen and (max-width: 992px) {
 
+    .col {
+        flex-basis: calc(100% / 6);
+    }
+
 }
 
 @media screen and (max-width: 768px) {
+
+    .col {
+        flex-basis: calc(100% / 4);
+    }
     
+}
+
+@media screen and (max-width: 576px) {
+
+    .col {
+        flex-basis: calc(100% / 3);
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -211,5 +230,9 @@ RESPONSIVE
     .top-left i {
         text-align: center;
         margin-bottom: 5px;
+    }
+
+    .col {
+        flex-basis: 50%;
     }
 }
