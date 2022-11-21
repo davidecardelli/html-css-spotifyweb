@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-
     <div class="top flex">
+        <!-- Inizio TOp Left (parte di sinistra con il Nav) -->
         <div class="top-left">
             <div class="top-left-top">
                 <picture class="logo">
@@ -47,8 +47,6 @@
                     </ul>
                 </div>
             </div>
-
-
             <div class="top-left-bottom">
                 <div class="install">
                     <i class="fa-regular fa-circle-down"></i>
@@ -60,9 +58,7 @@
                 </div>
             </div>
         </div>
-
-
-        
+        <!-- Inizio Top Right (parte a destra della Nav) -->
         <div class="top-right">
             <!-- Header con bottone effettua l'upgrade -->
             <div class="header pr-20">
@@ -213,17 +209,44 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-
+    <!-- Inizio Footer, con tutti i comandi del player -->
     <footer>
-        <div class="flex">
-            <div class="footer-left"></div>
-            <div class="footer-center"></div>
-            <div class="footer-right"></div>
+        <div class="player">
+            <div class="footer-left flex-center">
+                <div class="play-now ml-10">
+                    <img src="img/sinister.jpeg" alt="Sinister">
+                </div>
+                <div class="text-play-now ml-10">
+                    <p class="txt-white">Sinister</p>
+                    <p class="txt-grey">Brano Nome</p>
+                </div>
+                <div class="ml-30">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-folder"></i>                    
+                </div>
+            </div>
+            <div class="footer-center flex-center column">
+                <div class="controls">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step ml-30"></i>
+                    <i class="fa-solid fa-play ml-30"></i>
+                    <i class="fa-solid fa-forward-step ml-30"></i>
+                    <i class="fa-solid fa-arrow-rotate-right ml-30"></i>
+                </div>
+                <div class="progress-bar flex-center">
+                    <p class="time">0:25</p>
+                    <div class="bar"></div>
+                    <p class="time">4:35</p>
+                </div>
+            </div>
+            <div class="footer-right flex-center pr-20">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="bar"></div>
+            </div>
         </div>
     </footer>
-    
 </body>
 </html>
