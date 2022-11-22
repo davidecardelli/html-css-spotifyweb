@@ -392,6 +392,7 @@ EFFETTI HOVER
 .header .btn:hover,
 .controls i:hover {
     scale: 120%;
+    text-shadow: 0 0 5px white;
 }
 
 .card:hover .img-card {
@@ -404,6 +405,7 @@ EFFETTI HOVER
     font-size: 56px;
     font-weight: 400;
     color: white;
+    text-shadow: 0 0 5px white;
     
     position: absolute;
     top: 0;
@@ -420,6 +422,7 @@ EFFETTI HOVER
 li a:hover,
 .top-left div span:hover {
     color: white;
+    text-shadow: 0 0 5px white;
 }
 
 /*****************
