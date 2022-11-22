@@ -145,7 +145,7 @@ BTN
 }
 
 .header .btn:hover {
-    scale: 130%;
+    scale: 120%;
 }
 
 /*****************
@@ -158,7 +158,9 @@ TOP LEFT
     color: #7d7f84;
     font-size: .8rem;
     font-weight: bold;
-    padding-left: 15px; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+
 
     display: flex;
     flex-direction: column;
@@ -189,10 +191,28 @@ TOP LEFT
     font-size: 0.9rem;
 }
 
+.install span {
+    font-size: .6rem;
+}
+
+.line {
+    border-bottom: 1px solid #7d7f84;
+    margin: 10px 0;
+}
+
 .user img {
     width: 20px;
     background-color: grey;
     border-radius: 50%;
+}
+
+.user span {
+    color: white;
+    font-size: 1rem;
+}
+
+.top-left span {
+    margin-left: 5px;
 }
 
 /*****************
@@ -443,7 +463,7 @@ RESPONSIVE
     }
 
     .selected {
-        display: none;
+        border-left: none;
     }
 
     .top-right .header{
