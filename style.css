@@ -384,12 +384,18 @@ FOOTER
 EFFETTI HOVER
 ******************/
 
-.header .btn:hover {
+.header .btn:hover,
+.controls i:hover {
     scale: 120%;
 }
 
 .card:hover .img-card {
 	scale: 110%;
+}
+
+li a:hover,
+.top-left div span:hover {
+    color: white;
 }
 
 /*****************
