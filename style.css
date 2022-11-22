@@ -43,7 +43,6 @@ h3 {
 
 h5 {
     color: white;
-    margin-top: 20px;
 }
 
 /* Web APP, mantiene il footer (barra dei comandi) fissato. */
@@ -170,16 +169,22 @@ TOP LEFT
     overflow-y: hidden;
 }
 
+.top-left-top {
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+}
+
 .playlist {
     overflow-y: auto;
 }
 
-.top-left-top {
-    flex-basis: calc(100% - 90px);
-}
-
 .top-left-bottom {
-    flex-basis: 90px;
+    height: 90px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-sm {
