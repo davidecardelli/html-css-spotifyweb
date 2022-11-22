@@ -398,6 +398,25 @@ EFFETTI HOVER
 	scale: 110%;
 }
 
+.card:hover .img-card::after {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 56px;
+    font-weight: 400;
+    color: white;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 li a:hover,
 .top-left div span:hover {
     color: white;
