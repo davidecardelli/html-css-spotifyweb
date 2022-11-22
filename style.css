@@ -97,6 +97,10 @@ UTILS
     margin-bottom: 20px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -164,7 +168,20 @@ TOP LEFT
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    overflow-y: hidden;
+}
+
+.playlist {
+    overflow-y: auto;
+}
+
+.top-left-top {
+    flex-basis: calc(100% - 90px);
+}
+
+.top-left-bottom {
+    flex-basis: 90px;
 }
 
 .logo-sm {
@@ -225,6 +242,16 @@ TOP RIGHT
     background-color: #141922;
     overflow-y: auto;
     color: white;
+}
+
+.main-menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-menu ul li {
+    font-size: .8rem;
 }
 
 .top-right .header{
@@ -460,6 +487,15 @@ RESPONSIVE
         flex-basis: 40px;
         align-items: center;
         padding-left: 0;
+        padding-right: 0;
+    }
+
+    .install img {
+        margin-bottom: 5px;
+    }
+
+    .line {
+        display: none;
     }
 
     .selected {
