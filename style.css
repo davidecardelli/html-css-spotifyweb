@@ -34,6 +34,7 @@ li {
 li a{
     color: #7d7f84;
     font-size: .8rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -148,9 +149,6 @@ BTN
     margin-right: 10px;
 }
 
-.header .btn:hover {
-    scale: 120%;
-}
 
 /*****************
 TOP LEFT
@@ -284,6 +282,7 @@ TOP RIGHT
 
 .card {
     padding: 20px;
+    cursor: pointer;
 }
 
 .card p {
@@ -379,6 +378,18 @@ FOOTER
 .footer-right .fa-solid {
     margin-right: 10px;
     color: white;
+}
+
+/*****************
+EFFETTI HOVER
+******************/
+
+.header .btn:hover {
+    scale: 120%;
+}
+
+.card:hover .img-card {
+	scale: 110%;
 }
 
 /*****************
